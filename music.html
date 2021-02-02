@@ -1,0 +1,302 @@
+<html>
+
+
+<head>
+	<link rel="shortcut icon" type="image/jpg" href="Spotify.png">
+	</link>
+	<title>Spotify sounboard</title>
+
+
+
+	<style>
+		body {
+			background-image: url('music.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		h1 {
+			color: rgb(255, 255, 255);
+			text-align: center;
+		}
+		footer {
+		  background-color: transparent;
+		  padding: 10px;
+		  text-align: center;
+		  color: white;
+			font-size: 30px;
+		}
+	</style>
+
+	<h1>
+		Spotify soundboard
+	</h1>
+	<div id="row 1">
+		<div>
+			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
+			<iframe id="spot1" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<div>
+		<iframe id="spot2" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot3" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot4" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot5" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
+
+	<div id="row 2">
+		<iframe id="spot6" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot7" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot8" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot9" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot10" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
+
+	<div id="row 3">
+		<iframe id="spot11" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot12" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot13" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot14" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot15" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
+
+	<div id="row 4">
+		<iframe id="spot16" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot17" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot18" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot19" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot20" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
+
+	<div id="row 5">
+		<iframe id="spot21" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot22" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot23" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot24" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		<iframe id="spot25" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</div>
+
+	<script>
+		function refresh() {
+  alert("refresh the page if you want a new set of songs \n more songs will be added in the future");
+}
+		</script>
+		<script>
+function thisVolume(volume_value) { 
+		var myvideo = document.getElementById("spot1"); 
+		document.getElementById("vol").innerHTML=volume_value; 
+		myvideo.volume = volume_value / 100; 
+		}
+		
+		var songs1 = [
+    "https://open.spotify.com/embed/track/1K9QXJtypYRMVrfHixmHh3",
+ "https://open.spotify.com/embed/track/7clyJIrLkEbXUDwj1tC9zz", 
+ "https://open.spotify.com/embed/track/0AB5CTb04eqXnV9hEZx9FL",
+  "https://open.spotify.com/embed/track/31G6jTLEpHwGs3vpQ7iUJM"];
+document.getElementById("spot1").src = songs1[Math.floor(Math.random() * 4) + 0];
+		
+		
+		</script>
+		<script>
+var songs2 = [
+"https://open.spotify.com/embed/track/1BlqKx3JtMKY3K6F0uUbqW",
+"https://open.spotify.com/embed/track/7h2yzh9vIBxSBN3885QyQt",
+"https://open.spotify.com/embed/track/4EAV2cKiqKP5UPZmY6dejk",
+"https://open.spotify.com/embed/track/5dqrgmHHBuUzwYKBXJuIm0"
+];
+document.getElementById("spot2").src = songs2[Math.floor(Math.random() * 4) + 0];
+	
+    
+    var songs3 = [
+"https://open.spotify.com/embed/track/5dqrgmHHBuUzwYKBXJuIm0",
+"https://open.spotify.com/embed/track/6QyBWey7P8ILuhS5RO7xYe",
+"https://open.spotify.com/embed/track/5qrSlOut2rNAWv3ubArkNy",
+"https://open.spotify.com/embed/track/0TN3FKCgNsck8Z0t463bU0",
+    ];
+    document.getElementById("spot3").src = songs3[Math.floor(Math.random() * 4) + 0];
+    
+    var songs4 = [
+        "https://open.spotify.com/embed/track/5IcpFfoUZLU3G7b8BtppFi",
+"https://open.spotify.com/embed/track/4R8RG1OWtp0ahfyGUcD76M",
+"https://open.spotify.com/embed/track/6IHWepcSxwLdzM38nQSrnC",
+"https://open.spotify.com/embed/track/6JyuJFedEvPmdWQW0PkbGJ",];
+ document.getElementById("spot4").src = songs4[Math.floor(Math.random() * 4) + 0];
+
+var songs5 = [
+ "https://open.spotify.com/embed/track/41n0s0MdHk3SQYrJ4djpXb",
+"https://open.spotify.com/embed/track/3uKxSYyWgMqu9LrgC2Lo7v",
+"https://open.spotify.com/embed/track/0e9yz3Fz7Nn6I5E4XBP8no",
+"https://open.spotify.com/embed/track/4hPpVbbakQNv8YTHYaOJP4",
+];
+document.getElementById("spot5").src = songs5[Math.floor(Math.random() * 4) + 0];
+
+var songs6 = [
+"https://open.spotify.com/embed/track/6BYgj5vMITYe2x6umcvPQP",
+"https://open.spotify.com/embed/track/7oCFai1AxaGrmsZh55eEBK",
+"https://open.spotify.com/embed/track/1TvBNR8aIxsuowmKICby4M",
+"https://open.spotify.com/embed/track/5C5FqRfbXF9oY4HSRYyqn3",
+];
+document.getElementById("spot6").src = songs6[Math.floor(Math.random() * 4) + 0];
+
+var songs7 = [
+"https://open.spotify.com/embed/track/3R9j8urSPiBbapNbyuSYkE",
+"https://open.spotify.com/embed/track/7igeByaBM0MgGsgXtNxDJ7",
+"https://open.spotify.com/embed/track/3tjFYV6RSFtuktYl3ZtYcq",
+"https://open.spotify.com/embed/track/0t1kP63rueHleOhQkYSXFY",
+];
+document.getElementById("spot7").src = songs7[Math.floor(Math.random() * 4) + 0];
+
+var songs8 = [
+"https://open.spotify.com/embed/track/4umIPjkehX1r7uhmGvXiSV",
+"https://open.spotify.com/embed/track/7eBqSVxrzQZtK2mmgRG6lC",
+"https://open.spotify.com/embed/track/0yqrhHrcWLMjBylHReDN5u",
+"https://open.spotify.com/embed/track/0tBbt8CrmxbjRP0pueQkyU",
+];
+document.getElementById("spot8").src = songs8[Math.floor(Math.random() * 4) + 0];
+    
+  var songs9 = [
+"https://open.spotify.com/embed/track/0SuLAslEMFZAXf0SwY7syi",
+"https://open.spotify.com/embed/track/6Hx7kdHB9kGdxnw2EwSx2V",
+"https://open.spotify.com/embed/track/1N8moY6H0eThviK71VhTzY",
+"https://open.spotify.com/embed/track/2B8OrKU8suMxTx2PcuuSIG",
+  ];
+ document.getElementById("spot9").src = songs9[Math.floor(Math.random() * 4) + 0]; 
+
+ var songs10 = [
+"https://open.spotify.com/embed/track/5qRUEyakcE4cKgxAFrokNm",
+"https://open.spotify.com/embed/track/2C6UCRTZWveLVWZqabIQ49",
+"https://open.spotify.com/embed/track/60SdxE8apGAxMiRrpbmLY0",
+"https://open.spotify.com/embed/track/2XuMyge1XhHMMhU6h0xirt",
+ ];
+ document.getElementById("spot10").src = songs10[Math.floor(Math.random() * 4) + 0]; 
+
+
+var songs11 = [
+    "https://open.spotify.com/embed/track/4B3NmAqqfKT1E3R6JJBwFg",
+"https://open.spotify.com/embed/track/53GO7SC0UJhG8Rcuvf5Zub",
+"https://open.spotify.com/embed/track/5Z01UMMf7V1o0MzF86s6WJ",
+"https://open.spotify.com/embed/track/7bsnTsbiwOymZWjPF9v6Di",
+];
+document.getElementById("spot11").src = songs11[Math.floor(Math.random() * 4) + 0];
+		
+		var songs12 = [
+    "https://open.spotify.com/embed/track/1xQ6trAsedVPCdbtDAmk0c",
+"https://open.spotify.com/embed/track/7ce20yLkzuXXLUhzIDoZih",
+"https://open.spotify.com/embed/track/6p03zfug7944jEQhNGpEbF",
+"https://open.spotify.com/embed/track/4HBZA5flZLE435QTztThqH",
+];
+document.getElementById("spot12").src = songs12[Math.floor(Math.random() * 4) + 0];
+		
+		var songs13 = [
+    "https://open.spotify.com/embed/track/2dKyeWBPwhqMfPetw8PiFg",
+"https://open.spotify.com/embed/track/6UelLqGlWMcVH1E5c4H7lY",
+"https://open.spotify.com/embed/track/3ZCTVFBt2Brf31RLEnCkWJ",
+"https://open.spotify.com/embed/track/3AzjcOeAmA57TIOr9zF1ZW",
+];
+document.getElementById("spot13").src = songs13[Math.floor(Math.random() * 4) + 0];
+		
+		var songs14 = [
+    "https://open.spotify.com/embed/track/4umIPjkehX1r7uhmGvXiSV",
+"https://open.spotify.com/embed/track/11VApNQCWLJdzxWrlmwzUa",
+"https://open.spotify.com/embed/track/24ySl2hOPGCDcxBxFIqWBu",
+"https://open.spotify.com/embed/track/0nbXyq5TXYPCO7pr3N8S4I",
+];
+document.getElementById("spot14").src = songs14[Math.floor(Math.random() * 4) + 0];
+		
+		var songs15 = [
+    "https://open.spotify.com/embed/track/1raaNykBg1bDnWENUiglUA",
+"https://open.spotify.com/embed/track/20ICJSg5xQOqEwBaQ4ho9m",
+"https://open.spotify.com/embed/track/41L3O37CECZt3N7ziG2z7l",
+"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b",
+];
+document.getElementById("spot15").src = songs15[Math.floor(Math.random() * 4) + 0];
+		
+var songs16 = [
+    "https://open.spotify.com/embed/track/4ZQb1HWNrWXv8rlDnFudio",
+	"https://open.spotify.com/embed/track/4yn0ftNHQSwsWE81h33y4K",
+	"https://open.spotify.com/embed/track/120mPs6R3qBRxIEuIH1MW5",
+	"https://open.spotify.com/embed/track/120mPs6R3qBRxIEuIH1MW5",
+];
+document.getElementById("spot16").src = songs16[Math.floor(Math.random() * 4) + 0];
+
+var songs17 = [
+"https://open.spotify.com/embed/track/45jYIJVqddvpQzOE04GJ5D",
+"https://open.spotify.com/embed/track/2toVe5hfuIi97ytDPDbQFt",
+"https://open.spotify.com/embed/track/4TCG827sk5fDEmUvcQlStk",
+"https://open.spotify.com/embed/track/6pAaeIH6FuqdiweIogafXT"
+,
+];
+document.getElementById("spot17").src = songs17[Math.floor(Math.random() * 4) + 0];
+
+var songs18 = [
+"https://open.spotify.com/embed/track/67qz8HVZU1r0Q9MUJQ9AAi",
+"https://open.spotify.com/embed/track/4gi937XgdjaiTfH902EhqD",
+"https://open.spotify.com/embed/track/6zDSBeavhGQZs53NiArKsB",
+"https://open.spotify.com/embed/track/1jlnBQGP2DtSEhMgQaz7a7",
+];
+document.getElementById("spot18").src = songs15[Math.floor(Math.random() * 4) + 0];
+
+var songs19 = [
+"https://open.spotify.com/embed/track/1zZEly0sLmyDm75c1pAqYf",
+"https://open.spotify.com/embed/track/0CR60XwKbzgohE3I6NMjlR",
+"https://open.spotify.com/embed/track/4KQ6jZfxSdlSKp4GqcXLWJ",
+"https://open.spotify.com/embed/track/6Hj9jySrnFppAI0sEMCZpJ",
+];
+document.getElementById("spot19").src = songs19[Math.floor(Math.random() * 4) + 0];
+
+var songs20 = [
+"https://open.spotify.com/embed/track/696DnlkuDOXcMAnKlTgXXK",
+"https://open.spotify.com/embed/track/0JP9xo3adEtGSdUEISiszL",
+"https://open.spotify.com/embed/track/6MWtB6iiXyIwun0YzU6DFP",
+"https://open.spotify.com/embed/track/31JBtF1HCTZlFnmJDxZrD4",
+];
+document.getElementById("spot20").src = songs20[Math.floor(Math.random() * 4) + 0];
+
+var songs21 = [
+"https://open.spotify.com/embed/track/3PYx9Wte3jwb48V0wArMOy",
+"",
+"",
+"",
+];
+document.getElementById("spot21").src = songs21[Math.floor(Math.random() * 4) + 0];
+
+var songs22 = [
+    "",
+"",
+"",
+"",
+];
+document.getElementById("spot22").src = songs22[Math.floor(Math.random() * 4) + 0];
+
+var songs23 = [
+    "",
+"",
+"",
+"",
+];
+document.getElementById("spot23").src = songs23[Math.floor(Math.random() * 4) + 0];
+
+var songs24 = [
+    "",
+"",
+"",
+"",
+];
+document.getElementById("spot24").src = songs24[Math.floor(Math.random() * 4) + 0];
+
+var songs25 = [
+    "",
+"",
+"",
+"",
+];
+document.getElementById("spot25").src = songs25[Math.floor(Math.random() * 4) + 0];
+
+
+	</script>
+	<footer>
+	 <a href="mailto:20izac05disley@gmail.com"> contact the developer </a> </footer>
+
+	<body onload="refresh()">
+</head>
+	
+</html>
