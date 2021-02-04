@@ -34,7 +34,7 @@
 	</h1>
 	<div id="row 1">
 		<div>
-			<input id="vol-control" type="range" min="0" max="100" step="1" oninput="thisVolume(this.value)" onchange="thisVolume(this.value)"></input>
+			<!--volume slider html-->
 			<iframe id="spot1" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 		<div>
 		<iframe id="spot2" src="" width="250" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -81,11 +81,7 @@
 }
 		</script>
 		<script>
-function thisVolume(volume_value) { 
-		var myvideo = document.getElementById("spot1"); 
-		document.getElementById("vol").innerHTML=volume_value; 
-		myvideo.volume = volume_value / 100; 
-		}
+//this is where my volume slider will be for songs1//
 		
 		var songs1 = [
     "https://open.spotify.com/embed/track/1K9QXJtypYRMVrfHixmHh3",
